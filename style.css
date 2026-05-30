@@ -1,8 +1,8 @@
 /* ==========================================
-   SISTEM WARNA LOGO RESTU HARMONI
+   SISTEM REKA BENTUK BRANDING RESTU HARMONI
    Warna Utama: Deep Emerald Green (#1E5631)
-   Warna Aksen/Cahaya: Glowing Gold (#D4AF37)
-   Latar Belakang: Soft Off-White (#FAFAFA)
+   Warna Aksen: Glowing Gold (#D4AF37)
+   Format Khas: Buku Fizikal & E-Book Digital
    ========================================== */
 
 * {
@@ -19,12 +19,12 @@ body {
     overflow-x: hidden;
 }
 
-/* NAVBAR STYLING */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 6%;
+    padding: 14px 6%;
     background-color: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
     position: sticky;
@@ -47,7 +47,7 @@ body {
 
 .logo-sub {
     font-size: 9px;
-    color: #888;
+    color: #777;
     font-weight: 600;
     letter-spacing: 0.5px;
     margin-top: 2px;
@@ -102,12 +102,12 @@ body {
     border-radius: 25px;
     outline: none;
     font-size: 14px;
-    width: 200px;
+    width: 220px;
     transition: all 0.3s ease;
 }
 
 .search-bar:focus {
-    width: 260px;
+    width: 280px;
     border-color: #1E5631;
 }
 
@@ -115,33 +115,20 @@ body {
     position: absolute;
     right: 15px;
     color: #888;
-    cursor: pointer;
 }
 
 .cart-btn {
-    background: none;
+    background-color: #1E5631;
     border: none;
-    font-size: 20px;
-    color: #1E5631;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.2s;
-}
-
-.cart-btn:hover {
-    transform: scale(1.1);
-}
-
-.cart-count {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: #D4AF37;
     color: #fff;
-    font-size: 11px;
+    padding: 6px 14px;
+    border-radius: 20px;
     font-weight: bold;
-    padding: 2px 6px;
-    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .menu-toggle {
@@ -153,12 +140,12 @@ body {
     cursor: pointer;
 }
 
-/* HERO SECTION WITH DIGITAL GLOW PATTERN */
+/* HERO SECTION */
 .hero-section {
     position: relative;
-    background: linear-gradient(rgba(30, 86, 49, 0.9), rgba(15, 48, 27, 0.95)), 
+    background: linear-gradient(rgba(30, 86, 49, 0.92), rgba(15, 48, 27, 0.96)), 
                 url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
-    padding: 90px 4% 110px 4%;
+    padding: 100px 4% 120px 4%;
     text-align: center;
     color: white;
 }
@@ -167,20 +154,18 @@ body {
     font-size: 45px;
     color: #D4AF37;
     margin-bottom: 15px;
-    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.6));
-    animation: pulse 2.5s infinite;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5));
 }
 
 .hero-content h1 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
-    letter-spacing: 0.5px;
 }
 
 .hero-content p {
     font-size: 18px;
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto 35px auto;
     opacity: 0.9;
     line-height: 1.6;
@@ -224,7 +209,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* RESPONSIVE LAYOUT CONTAINER */
+/* RESPONSIVE LAYOUT */
 .main-container {
     display: flex;
     max-width: 1400px;
@@ -246,10 +231,10 @@ body {
 }
 
 .filter-header h3 {
-    font-size: 18px;
+    font-size: 17px;
     color: #1E5631;
     margin-bottom: 20px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f5f5f5;
     padding-bottom: 10px;
 }
 
@@ -258,9 +243,9 @@ body {
 }
 
 .filter-group h4 {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
-    color: #888;
+    color: #999;
     letter-spacing: 0.5px;
     margin-bottom: 12px;
 }
@@ -269,18 +254,15 @@ body {
     display: block;
     position: relative;
     padding-left: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     cursor: pointer;
     font-size: 14px;
-    user-select: none;
 }
 
 .custom-checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
 }
 
 .checkmark {
@@ -291,10 +273,6 @@ body {
     width: 18px;
     background-color: #f0f0f0;
     border-radius: 4px;
-}
-
-.custom-checkbox:hover input ~ .checkmark {
-    background-color: #e0e0e0;
 }
 
 .custom-checkbox input:checked ~ .checkmark {
@@ -321,43 +299,7 @@ body {
     transform: rotate(45deg);
 }
 
-.price-range {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.price-input {
-    width: 100%;
-    padding: 6px 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 13px;
-}
-
-.size-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.size-tag {
-    padding: 5px 12px;
-    border: 1px solid #e0e0e0;
-    background-color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.size-tag:hover {
-    border-color: #1E5631;
-    color: #1E5631;
-}
-
-/* PRODUCTS GRID AREA */
+/* PRODUCTS AREA */
 .products-area {
     flex: 3;
 }
@@ -370,9 +312,6 @@ body {
     font-size: 22px;
     color: #1E5631;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .section-title-container p {
@@ -387,15 +326,15 @@ body {
     gap: 24px;
 }
 
-/* INDIVIDUAL PRODUCT CARD */
+/* PRODUCT CARD */
 .product-card {
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
     position: relative;
     transition: all 0.3s ease;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f0f0f0;
     display: flex;
     flex-direction: column;
 }
@@ -415,30 +354,29 @@ body {
     padding: 4px 10px;
     border-radius: 20px;
     z-index: 10;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
-.badge-buku {
-    background-color: #1E5631;
-}
-
-.badge-busana {
-    background-color: #a0522d;
-}
+.badge-fizikal { background-color: #1E5631; }
+.badge-ebook { background-color: #2980b9; }
+.badge-busana { background-color: #a0522d; }
 
 .product-img-placeholder {
-    height: 220px;
-    background-color: #eef5f0;
+    height: 200px;
+    background-color: #f4f8f5;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 55px;
+    font-size: 50px;
     color: #1E5631;
 }
 
-.code-green-light {
-    background-color: #f9f5eb;
+.code-blue-light {
+    background-color: #eef5f9;
+    color: #2980b9;
+}
+
+.code-gold-light {
+    background-color: #fbf8f0;
     color: #a0522d;
 }
 
@@ -450,11 +388,10 @@ body {
 }
 
 .product-info h4 {
-    font-size: 16px;
+    font-size: 15px;
     color: #2c3e50;
     font-weight: 700;
     margin-bottom: 8px;
-    line-height: 1.4;
 }
 
 .product-desc {
@@ -473,32 +410,36 @@ body {
 }
 
 .price {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     color: #1E5631;
 }
 
-.add-to-cart-btn {
-    background-color: transparent;
-    border: 1.5px solid #1E5631;
-    color: #1E5631;
-    padding: 6px 14px;
+/* TOYYIBPAY INTEGRATION BUTTON */
+.toyyib-btn {
+    background-color: #D4AF37;
+    color: #1E5631 !important;
+    border: none;
+    padding: 8px 14px;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
     border-radius: 6px;
-    cursor: pointer;
     transition: all 0.2s;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(212, 175, 55, 0.2);
 }
 
-.add-to-cart-btn:hover {
+.toyyib-btn:hover {
     background-color: #1E5631;
-    color: white;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(30, 86, 49, 0.2);
 }
 
-/* FOOTER STYLING */
+/* FOOTER */
 .site-footer {
-    background-color: #0d1f14;
-    color: #cbd5e1;
+    background-color: #0b1a0f;
+    color: #94a3b8;
     padding: 50px 4% 20px 4%;
     margin-top: 80px;
 }
@@ -509,26 +450,12 @@ body {
     gap: 40px;
     max-width: 1400px;
     margin: 0 auto;
-    padding-bottom: 35px;
-    border-bottom: 1px solid #1a3322;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #162e1c;
 }
 
-.footer-brand h4 {
+.footer-brand h4, .footer-links h5, .footer-contact h5 {
     color: white;
-    font-size: 18px;
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
-}
-
-.footer-brand p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #94a3b8;
-}
-
-.footer-links h5, .footer-contact h5 {
-    color: white;
-    font-size: 15px;
     margin-bottom: 15px;
 }
 
@@ -542,7 +469,6 @@ body {
     color: #94a3b8;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s;
 }
 
 .footer-links a:hover {
@@ -552,79 +478,30 @@ body {
 .footer-contact p {
     font-size: 14px;
     margin-bottom: 10px;
-    color: #94a3b8;
-}
-
-.footer-contact i {
-    margin-right: 8px;
-    color: #D4AF37;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
     font-size: 13px;
-    color: #64748b;
+    color: #536477;
 }
 
-/* ANIMATIONS */
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 0.9; }
-    50% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8)); }
-    100% { transform: scale(1); opacity: 0.9; }
-}
-
-.bounce {
-    animation: cartBounce 0.3s ease;
-}
-
-@keyframes cartBounce {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.4); background-color: #2ecc71; }
-    100% { transform: scale(1); }
-}
-
-
-/* ===================================================
-   📱 INTERFAS MEDIA QUERIES (SISTEM RESPONSIVITY)
-   =================================================== */
-
-/* 1. Skrin Komputer Kecil & Laptop (Maksimum 1100px) */
+/* RESPONSIVE DESIGN */
 @media (max-width: 1100px) {
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* 2. Paparan iPad & Tablet (Maksimum 900px) */
 @media (max-width: 900px) {
-    .main-container {
-        flex-direction: column;
-    }
-    
-    .sidebar-filter {
-        max-width: 100%;
-        width: 100%;
-    }
-    
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+    .main-container { flex-direction: column; }
+    .sidebar-filter { max-width: 100%; width: 100%; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
 }
 
-/* 3. Paparan Telefon Pintar / Mobile (Maksimum 650px) */
 @media (max-width: 650px) {
-    .navbar {
-        padding: 12px 4%;
-    }
-
-    .menu-toggle {
-        display: block; /* Tunjukkan ikon menu hamburger */
-    }
-
+    .menu-toggle { display: block; }
     .nav-menu {
-        display: none; /* Sembunyikan untuk Mobile secara default */
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -635,61 +512,13 @@ body {
         box-shadow: 0 10px 15px rgba(0,0,0,0.05);
         gap: 15px;
     }
-
-    .nav-menu.active {
-        display: flex; /* Dipaparkan apabila menu dicetuskan */
-    }
-
-    .search-box {
-        display: none; /* Sembunyikan search box besar pada mobile header demi ruang */
-    }
-
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 15px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0 20px;
-    }
-
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* Tetap 2 lajur bersebelahan di mobile (Sangat Mesra Pengguna) */
-        gap: 12px;
-    }
-
-    .product-img-placeholder {
-        height: 150px;
-        font-size: 40px;
-    }
-
-    .product-info {
-        padding: 10px;
-    }
-
-    .product-info h4 {
-        font-size: 14px;
-    }
-
-    .product-desc {
-        display: none; /* Sembunyikan penerangan panjang pada mobile untuk elak skrin sesak */
-    }
-
-    .product-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        width: 100%;
-    }
-
-    .add-to-cart-btn {
-        width: 100%;
-        text-align: center;
-        padding: 8px 0;
-    }
+    .nav-menu.active { display: flex; }
+    .search-box { display: none; }
+    .hero-content h1 { font-size: 28px; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .product-img-placeholder { height: 140px; font-size: 35px; }
+    .product-info { padding: 10px; }
+    .product-desc { display: none; }
+    .product-meta { flex-direction: column; align-items: flex-start; gap: 8px; width: 100%; }
+    .toyyib-btn { width: 100%; }
 }

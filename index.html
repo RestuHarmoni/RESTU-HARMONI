@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restu Harmoni | Kedai Buku & Busana Muslim</title>
+    <title>Restu Harmoni | Hub Buku, E-Book & Busana Muslimah</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,7 +13,7 @@
     <header class="navbar">
         <div class="logo">
             <span class="logo-text">RESTU HARMONI</span>
-            <small class="logo-sub">SUMBANGAN ONLINE UTK PENDIDIKAN ISLAM</small>
+            <small class="logo-sub">HUB PENDIDIKAN ISLAM & BUSANA PATUH SYARIAH</small>
         </div>
         
         <nav class="nav-menu" id="navMenu">
@@ -25,12 +25,12 @@
 
         <div class="nav-icons">
             <div class="search-box">
-                <input type="text" placeholder="Cari..." class="search-bar">
+                <input type="text" placeholder="Cari naskhah atau busana..." class="search-bar">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
-            <button class="cart-btn">
-                <i class="fa-solid fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
+            <button class="cart-btn" onclick="alert('Sistem pembayaran dihalakan terus secara selamat melalui ToyyibPay FPX.')">
+                <i class="fa-solid fa-wallet"></i>
+                <span class="cart-count">FPX</span>
             </button>
             <button class="menu-toggle" id="menuToggle">
                 <i class="fa-solid fa-bars"></i>
@@ -46,9 +46,9 @@
                 <i class="fa-solid fa-book-open"></i>
             </div>
             <h1>Gerbang Ilmu & Keberkatan Anda</h1>
-            <p>Jelajahi khazanah buku ilmiah, naskhah pendidikan Islam, dan koleksi busana Muslimah eksklusif yang memelihara syariat.</p>
+            <p>Jelajahi khazanah naskhah ilmiah fizikal, e-book digital pantas, dan busana Muslimah eksklusif. Pembayaran selamat melalui ToyyibPay.</p>
             <div class="hero-buttons">
-                <a href="#buku" class="cta-button primary-btn">Hab Buku Ilmu</a>
+                <a href="#buku" class="cta-button primary-btn">Lihat Buku & E-Book</a>
                 <a href="#busana" class="cta-button secondary-btn">Koleksi Busana</a>
             </div>
         </div>
@@ -67,36 +67,28 @@
                 <h4>Kategori Laman</h4>
                 <label class="custom-checkbox">
                     <input type="checkbox" checked>
-                    <span class="checkmark"></span> Semua Produk
+                    <span class="checkmark"></span> Semua Jenis
                 </label>
                 <label class="custom-checkbox">
                     <input type="checkbox">
-                    <span class="checkmark"></span> Hab Buku & Kitab
+                    <span class="checkmark"></span> 📚 Buku Fizikal
                 </label>
                 <label class="custom-checkbox">
                     <input type="checkbox">
-                    <span class="checkmark"></span> Busana Muslim & Muslimah
+                    <span class="checkmark"></span> 📥 E-Book (Digital)
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> 👕 Busana Muslimah
                 </label>
             </div>
 
             <div class="filter-group">
-                <h4>Harga (RM)</h4>
-                <div class="price-range">
-                    <input type="number" placeholder="Min" class="price-input">
-                    <span>-</span>
-                    <input type="number" placeholder="Max" class="price-input">
-                </div>
-            </div>
-
-            <div class="filter-group">
-                <h4>Saiz Busana</h4>
-                <div class="size-tags">
-                    <span class="size-tag">S</span>
-                    <span class="size-tag">M</span>
-                    <span class="size-tag">L</span>
-                    <span class="size-tag">XL</span>
-                    <span class="size-tag">XXL</span>
-                </div>
+                <h4>Nota Penghantaran</h4>
+                <p style="font-size: 12px; color: #666; line-height: 1.4;">
+                    * <strong>E-Book</strong> dihantar terus secara automatik ke e-mel/muat turun selepas FPX berjaya.<br>
+                    * <strong>Fizikal</strong> memerlukan pengisian alamat semasa pembayaran ToyyibPay.
+                </p>
             </div>
         </aside>
 
@@ -105,52 +97,58 @@
             
             <!-- CATEGORY: BUKU -->
             <div id="buku" class="section-title-container">
-                <h2 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Hab Buku & Pendidikan Islam</h2>
-                <p>Naskhah ilmiah pilihan untuk membina ummah berilmu</p>
+                <h2 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Hab Buku & Ilmu (Fizikal / E-Book)</h2>
+                <p>Pilih format fizikal untuk rujukan perpustakaan atau e-book untuk bacaan digital pantas</p>
             </div>
             
             <div class="products-grid">
+                <!-- PRODUCT 1: BUKU FIZIKAL -->
                 <div class="product-card">
-                    <div class="product-badge badge-buku">Buku</div>
+                    <div class="product-badge badge-fizikal">📚 Buku Fizikal</div>
                     <div class="product-img-placeholder">
-                        <i class="fa-solid fa-book-quran"></i>
+                        <i class="fa-solid fa-book"></i>
                     </div>
                     <div class="product-info">
-                        <h4>Tafsir Al-Quran Moden (Jilid 1)</h4>
-                        <p class="product-desc">Kupas ringkas dan pemahaman kontemporari untuk rujukan harian.</p>
+                        <h4>Tafsir Al-Quran Moden (Jilid 1) - Fizikal</h4>
+                        <p class="product-desc">Naskhah fizikal kulit tebal (hardcover) berkualiti tinggi. Sesuai untuk tadabbur seisi keluarga.</p>
                         <div class="product-meta">
                             <span class="price">RM 45.00</span>
-                            <button class="add-to-cart-btn" onclick="tambahTroli()">Tambah <i class="fa-solid fa-plus"></i></button>
+                            <!-- GANTIKAN URL DI BAWAH DENGAN PAUTAN TOYYIBPAY BUKU FIZIKAL ANDA -->
+                            <a href="https://toyyibpay.com/" class="buy-btn toyyib-btn" target="_blank">Beli & Pos (FPX)</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- PRODUCT 2: E-BOOK DIGITAL -->
                 <div class="product-card">
-                    <div class="product-badge badge-buku">Buku</div>
+                    <div class="product-badge badge-ebook">📥 E-Book (PDF)</div>
+                    <div class="product-img-placeholder code-blue-light">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="product-info">
+                        <h4>Tafsir Al-Quran Moden (Jilid 1) - E-Book</h4>
+                        <p class="product-desc">Versi digital PDF beresolusi tinggi. Muat turun terus dan baca secara instan di telefon atau tablet.</p>
+                        <div class="product-meta">
+                            <span class="price">RM 15.00</span>
+                            <!-- GANTIKAN URL DI BAWAH DENGAN PAUTAN TOYYIBPAY EBOOK ANDA -->
+                            <a href="https://toyyibpay.com/" class="buy-btn toyyib-btn" target="_blank">Beli & Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3: BUKU FIZIKAL 2 -->
+                <div class="product-card">
+                    <div class="product-badge badge-fizikal">📚 Buku Fizikal</div>
                     <div class="product-img-placeholder">
                         <i class="fa-solid fa-mosque"></i>
                     </div>
                     <div class="product-info">
                         <h4>Sejarah Emas Tamadun Islam</h4>
-                        <p class="product-desc">Menelusuri kegemilangan ilmuan Islam dalam pelbagai bidang sains.</p>
+                        <p class="product-desc">Menelusuri sejarah kebangkitan dan sumbangan besar ilmuan Islam terhadap sains moden.</p>
                         <div class="product-meta">
                             <span class="price">RM 38.00</span>
-                            <button class="add-to-cart-btn" onclick="tambahTroli()">Tambah <i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-badge badge-buku">Buku</div>
-                    <div class="product-img-placeholder">
-                        <i class="fa-solid fa-hands-holding-child"></i>
-                    </div>
-                    <div class="product-info">
-                        <h4>Asas Didikan Anak Cara Islam</h4>
-                        <p class="product-desc">Panduan keibubapaan berlandaskan sunnah dan modal insan murni.</p>
-                        <div class="product-meta">
-                            <span class="price">RM 25.00</span>
-                            <button class="add-to-cart-btn" onclick="tambahTroli()">Tambah <i class="fa-solid fa-plus"></i></button>
+                            <!-- GANTIKAN URL DI BAWAH DENGAN PAUTAN TOYYIBPAY ANDA -->
+                            <a href="https://toyyibpay.com/" class="buy-btn toyyib-btn" target="_blank">Beli & Pos (FPX)</a>
                         </div>
                     </div>
                 </div>
@@ -159,51 +157,40 @@
             <!-- CATEGORY: BUSANA -->
             <div id="busana" class="section-title-container" style="margin-top: 50px;">
                 <h2 class="section-title"><i class="fa-solid fa-shirt"></i> Koleksi Busana Muslim & Muslimah</h2>
-                <p>Pakaian patuh syariah, anggun, selesa, dan berkualiti tinggi</p>
+                <p>Pakaian berkualiti tinggi, potongan selesa, anggun, dan memelihara syariat</p>
             </div>
 
             <div class="products-grid">
+                <!-- PRODUCT 4: BUSANA -->
                 <div class="product-card">
                     <div class="product-badge badge-busana">Busana</div>
-                    <div class="product-img-placeholder code-green-light">
+                    <div class="product-img-placeholder code-gold-light">
                         <i class="fa-solid fa-person-dress"></i>
                     </div>
                     <div class="product-info">
                         <h4>Abaya Nur Emerald Exclusive</h4>
-                        <p class="product-desc">Potongan longgar berona hijau zamrud premium dengan sulaman benang emas halus.</p>
+                        <p class="product-desc">Kain premium sejuk berona hijau zamrud dengan sulaman halus. Sila pilih saiz di borang bayaran.</p>
                         <div class="product-meta">
                             <span class="price">RM 129.00</span>
-                            <button class="add-to-cart-btn" onclick="tambahTroli()">Tambah <i class="fa-solid fa-plus"></i></button>
+                            <!-- GANTIKAN URL DI BAWAH DENGAN PAUTAN TOYYIBPAY BUSANA ANDA -->
+                            <a href="https://toyyibpay.com/" class="buy-btn toyyib-btn" target="_blank">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- PRODUCT 5: BUSANA 2 -->
                 <div class="product-card">
                     <div class="product-badge badge-busana">Busana</div>
-                    <div class="product-img-placeholder code-green-light">
+                    <div class="product-img-placeholder code-gold-light">
                         <i class="fa-solid fa-person"></i>
                     </div>
                     <div class="product-info">
-                        <h4>Kurta Ahmad Slim Fit (Premium)</h4>
-                        <p class="product-desc">Kain cotton sejuk yang sangat selesa untuk solat jemaah mahupun santai.</p>
+                        <h4>Kurta Ahmad Slim Fit Premium</h4>
+                        <p class="product-desc">Material cotton eksklusif yang sangat selesa dan mudah digosok untuk solat mahupun santai.</p>
                         <div class="product-meta">
                             <span class="price">RM 79.00</span>
-                            <button class="add-to-cart-btn" onclick="tambahTroli()">Tambah <i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-badge badge-busana">Busana</div>
-                    <div class="product-img-placeholder code-green-light">
-                        <i class="fa-solid fa-kaftan"></i>
-                    </div>
-                    <div class="product-info">
-                        <h4>Tudung Labuh Khimar Safiyya</h4>
-                        <p class="product-desc">Material sifon dua lapisan yang beralun lembut, patuh syariah, tidak jarang.</p>
-                        <div class="product-meta">
-                            <span class="price">RM 49.00</span>
-                            <button class="add-to-cart-btn" onclick="tambahTroli()">Tambah <i class="fa-solid fa-plus"></i></button>
+                            <!-- GANTIKAN URL DI BAWAH DENGAN PAUTAN TOYYIBPAY BUSANA ANDA -->
+                            <a href="https://toyyibpay.com/" class="buy-btn toyyib-btn" target="_blank">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -217,51 +204,33 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <h4>RESTU HARMONI</h4>
-                <p>Sumbangan Online Bagi Hub Pendidikan Islam & Penyebaran Ilmu Manfaat.</p>
+                <p>Sumbangan dan jualan dalam talian untuk memperkasakan ekosistem pendidikan Islam serantau.</p>
             </div>
             <div class="footer-links">
-                <h5>Pautan Pintas</h5>
-                <a href="#home">Utama</a>
-                <a href="#buku">Hab Buku</a>
-                <a href="#busana">Koleksi Busana</a>
+                <h5>Kategori Hub</h5>
+                <a href="#buku">Buku Fizikal</a>
+                <a href="#buku">E-Book Digital</a>
+                <a href="#busana">Busana Muslimah</a>
             </div>
             <div class="footer-contact">
-                <h5>Hubungi Kami</h5>
+                <h5>Hubungi Pihak Pengurusan</h5>
                 <p><i class="fa-solid fa-envelope"></i> info@restuharmoni.com</p>
-                <p><i class="fa-brands fa-whatsapp"></i> +60 12-345 6789</p>
+                <p><i class="fa-solid fa-shield-halved"></i> Gerbang Pembayaran Selamat ToyyibPay</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 RESTU HARMONI. Hak Cipta Terpelihara. Reka Bentuk UI Responsif.</p>
+            <p>&copy; 2026 RESTU HARMONI (restuharmoni.com). Di-hos secara selamat di GitHub Pages.</p>
         </div>
     </footer>
 
-    <!-- INTERACTIVE JAVASCRIPT -->
+    <!-- INTERACTIVE JAVASCRIPT FOR MOBILE MENU -->
     <script>
-        // Hamburger Menu Toggle
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
 
         menuToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
         });
-
-        // Shopping Cart Simulation
-        let bilBarang = 0;
-        const cartCountEl = document.querySelector('.cart-count');
-
-        function tambahTroli() {
-            bilBarang++;
-            cartCountEl.textContent = bilBarang;
-            cartCountEl.classList.add('bounce');
-            
-            // Remove animation class after finish
-            setTimeout(() => {
-                cartCountEl.classList.remove('bounce');
-            }, 300);
-            
-            alert('Produk berjaya ditambah ke troli Restu Harmoni!');
-        }
     </script>
 </body>
 </html>
